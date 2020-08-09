@@ -1,0 +1,123 @@
+
+  * {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-size: 16px;
+    font-family: 'Karla', sans-serif;
+    background-color: #E5EFF5;
+  }
+
+  .container {
+    display: flex;
+    padding: 2rem;
+    min-height: 100vh;
+    justify-content: center;
+    align-content: center;
+    flex-direction: row;
+    position: relative;
+  }
+
+  .price-grid {
+    width: 650px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px 0 hsla(0, 0%, 50%, 0.4);
+    background-color: white;
+    overflow: hidden;
+  }
+
+  .main-heading {
+    width: 100%;
+    padding: 30px;
+  }
+
+  .main-heading>h1 {
+    color: hsl(179, 62%, 43%);
+        font-size: 1.57rem;
+        padding: 15px 0;
+  }
+
+  .main-heading>h2 {
+    color: hsl(71, 73%, 54%);
+    font-size: 1rem;
+    padding: 10px 0;
+  }
+
+  .main-heading p {
+    color: hsl(218, 22%, 67%);
+    line-height: 1.5rem;
+  }
+
+  .bottom-about {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .bottom-about h2 {
+    font-size: 1.25rem;
+    padding: 15px 0 20px;
+  }
+
+  .bottom-about__Subscription {
+    background-color: hsl(179, 62%, 43%);
+    color: white;
+    padding: 30px;
+    flex: 50%;
+  }
+  .bottom-about__Subscription span {
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    vertical-align: middle;
+    padding-right: 10px;
+  }
+  .bottom-about__Subscription > h2 + p {
+    color: hsl(204, 43%, 80%);
+  }
+  .bottom-about__Subscription p:last-of-type {
+    padding: 10px 0;
+    line-height: 1rem;
+  }
+
+
+  .bottom-about__Subscription button {
+    background-color: hsl(71, 73%, 54%);
+        border: 0;
+        color: white;
+        font-size: 1.125rem;
+        display: block;
+        width: 100%;
+        padding: 15px 0;
+        border-radius: 5px;
+        box-shadow: 0 5px 5px 5px hsla(0, 0%, 50%, 0.3);
+        margin: 20px 0;
+  }
+  .bottom-about__Subscription button:hover {
+    background-color: hsla(71, 73%, 54%,0.9);
+    transform: translate(0,1px);
+  }
+  .bottom-about__about-us {
+    background-color: hsla(179, 62%, 43%, 0.8);
+    color: white;
+    padding: 30px;
+    flex: 50%;
+  }
+  .bottom-about__about-us li{
+    color: hsl(204, 43%, 90%);
+        line-height: 1.4rem;
+  }
+
+  .footer {
+    position: absolute;
+    bottom: 15px;
+  }
+  @media screen and (max-width: 600px){
+    .media-full-width {
+      flex: 100%;
+    }
+  }
